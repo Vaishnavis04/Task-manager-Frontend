@@ -44,7 +44,7 @@ h4 {
 }
 
 .sidebar h2 {
-  font-size: 22px;
+  font-size: 33px;
   color: var(--primary);
   margin-bottom: 24px;
 }
@@ -56,17 +56,18 @@ h4 {
 }
 
 .sidebar li {
-  padding: 12px 16px;
-  font-size: 15px;
+  padding: 14px 18px;
+  font-size: 18px; 
   color: var(--text-secondary);
   border-radius: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   transition: all 0.2s ease-in-out;
 }
+
 
 .sidebar li:hover,
 .sidebar li.active {
@@ -84,6 +85,7 @@ h4 {
 .tab-content-scroll {
   max-height: 100vh;
   overflow-y: auto;
+   padding-bottom: 30px;
 }
 
 /* Widgets */
@@ -201,6 +203,8 @@ button:hover {
   border: 1px solid var(--border);
   border-radius: 10px;
   overflow: hidden;
+  font-size:16px;
+  text-align:center;
 }
 
 .users-table th,
@@ -209,6 +213,8 @@ button:hover {
 .tasks-table td {
   padding: 12px 16px;
   text-align: left;
+  font-size:14px;
+
   border-bottom: 1px solid var(--border);
 }
 
@@ -216,6 +222,8 @@ button:hover {
 .tasks-table th {
   background-color: #f3f4f6;
   color: var(--text-primary);
+  text-align: center;
+  font-size:18px;
 }
 
 .users-table tr:hover,
@@ -241,6 +249,22 @@ button:hover {
 .edit-buttons {
   display: flex;
   gap: 10px;
+}
+.widget h3 {
+  font-size: 18px;
+}
+
+.widget p {
+  font-size: 30px;
+}
+
+.charts-container {
+  gap: 40px;
+  justify-content: center;
+}
+
+.sidebar h2 {
+  font-size: 24px;
 }
 
 /* Filters */
