@@ -194,11 +194,12 @@ const createTask = async (e) => {
   }
 };
   // Filtered users and tasks
-  const filteredUsers = users.filter(
-    (u) =>
-      u.username.toLowerCase().includes(userSearch.toLowerCase()) ||
-      u.email.toLowerCase().includes(userSearch.toLowerCase())
-  );
+ const filteredUsers = users.filter(
+  (u) =>
+    (u.username?.toLowerCase() || '').includes(userSearch.toLowerCase()) ||
+    (u.email?.toLowerCase() || '').includes(userSearch.toLowerCase())
+);
+
 
   const filteredTasks = tasks.filter((t) => {
     let statusMatch = taskFilters.status ? t.status === taskFilters.status : true;
@@ -247,6 +248,7 @@ const createTask = async (e) => {
         </nav>
       </aside>
 <main className="main-content">
+  <div className="tab-content-scroll">
   {selectedTab === "overview" && (
     <section>
       <h2>Dashboard Overview</h2>
@@ -585,6 +587,7 @@ const createTask = async (e) => {
           </section>
         )}
         </section>
+        </div>
       </main>
     </div>
   );

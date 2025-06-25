@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Login from './components/Login';
-import Signup from './components/Signup';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 import AdminDashboard from './components/AdminDashboard';
 import UserDashboard from './pages/UserDashboard';
 import AdminRoute from './components/AdminRoute';
@@ -34,3 +34,22 @@ const App = () => {
 };
 
 export default App;
+// import React from 'react';
+// import { Routes, Route } from 'react-router-dom';
+// import Login from './pages/Login';
+// import Signup from './pages/Signup';
+// import Auth from './pages/Auth';
+// const App = () => {
+//   return (
+//     <Routes>
+//       <Route path="/" element={<Login />} />
+//       <Route path="/auth" element={<Auth />} />
+//       <Route path="/signup" element={<Signup />} />
+//       <Route path="/dashboard" element={<h2>Dashboard (Protected)</h2>} />
+//     </Routes>
+//   );
+// };
+
+// export default App;
+
+ 
